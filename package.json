@@ -1,12 +1,21 @@
 {
     "name": "console-alert",
     "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
+    "description": "color console",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "node dist/index.js",
+        "build": "tsc",
+        "prepare": "npm run build",
+        "dev": "nodemon dist/index.js",
+        "watch": "tsc -w"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC"
+    "keywords": ["console-alert", "color your console", "color console", "console.log", "console", "alert"],
+    "author": "jayshankar",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jayshankar-Dey/console-alert.git"
+    }
 }
